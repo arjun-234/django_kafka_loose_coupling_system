@@ -2,7 +2,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render
 from .models import User
 from .kafka_producer import produce_message
-from task1.settings import EMAIL_HOST_USER
+from django_kafka_loose_coupling_system.settings import EMAIL_HOST_USER
 
 def register_user(request):
     if request.method == 'POST':
